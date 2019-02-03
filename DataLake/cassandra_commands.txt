@@ -1,0 +1,7 @@
+Cassandra commands
+
+Transaction
+
+USE financekeyspace;
+CREATE TABLE transaction (id uuid, day timestamp, msg varchar, explanation varchar, category varchar, subcategory varchar, amount double, PRIMARY KEY (id, day, category));
+DROP TABLE transaction;
